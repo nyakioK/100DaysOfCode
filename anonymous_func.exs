@@ -32,3 +32,19 @@ end
 
 IO.puts prefix.("Elixir").("Rocks")
 
+#Using the and function, rewrite:
+#Enum.map [1,2,3,4], fn x -> x + 2 end
+
+add_two = Enum.map [1, 2, 3, 4], &(&1 + 2)
+
+#Enum.each [1, 2, 3, 4], fn x -> IO.inspect x end
+
+insp = Enum.each [1, 2, 3, 4] , &(IO.inspect &1)
+
+
+#Enter a list and the program will reverse it and print it out.
+#
+rev_str = &(Enum.reverse(&1))
+
+IO.puts rev_str.([1, 2, 3, 4, 5])
+
