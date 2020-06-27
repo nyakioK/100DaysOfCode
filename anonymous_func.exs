@@ -32,7 +32,7 @@ end
 
 IO.puts prefix.("Elixir").("Rocks")
 
-#Using the and function, rewrite:
+#Using the & operator , rewrite:
 #Enum.map [1,2,3,4], fn x -> x + 2 end
 
 add_two = Enum.map [1, 2, 3, 4], &(&1 + 2)
